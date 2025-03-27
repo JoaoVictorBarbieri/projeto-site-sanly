@@ -11,16 +11,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Sanly World</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">About me</a></li>
-                <li><a href="#Artes">Arts</a></li>
-                <li><a href="#contato">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Sanly World</h1>
+    <nav>
+        <ul>
+            <li><a href="#sobre">About me</a></li>
+            <li><a href="#projetos">Arts</a></li>
+            <li><a href="#contato">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Sessão de Entrada (Landing Page) com Carrossel -->
+<section id="entrada" class="landing-page">
+    <div class="landing-container">
+        <h2>Bem-vindo ao meu Portfólio!</h2>
+        <p>Explore meus projetos e descubra como posso ajudar a transformar suas ideias.</p>
+        
+        <!-- Carrossel de Imagens -->
+        <div class="carrossel">
+            <div class="carrossel-imagem">
+                <img src="./imagens/annah.jpg" alt="Imagem 1">
+            </div>
+            <div class="carrossel-imagem">
+                <img src="./imagens/emotes.jpg" alt="Imagem 2">
+            </div>
+            <div class="carrossel-imagem">
+                <img src="./imagens/choco.jpg" alt="Imagem 3">
+            </div>
+            <!-- Botões para navegação do carrossel -->
+            <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+            <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
     
     <section id="sobre">
         <h2>About me</h2>
@@ -37,7 +61,7 @@
     
     <section id="contato">   
       <h2>Contact</h2>
-      <p>Email: sanlypoly@gmail.com</p>
+      <p>Email: sanlylioro@gmail.com</p>
       <div class="redes-sociais">
         <a href="https://discord.com" target="_blank" aria-label="Discord">
           <i class="fab fa-discord"></i>

@@ -5,17 +5,17 @@ export function carregarProjetos() {
     { 
         titulo: "Projeto 1", 
         descricao: "Descrição do projeto 1",
-        imagem: "./imagens/imagem1.jpg"
+        imagem: "./imagens/patos.jpg"
     },
     { 
         titulo: "Projeto 2", 
         descricao: "Descrição do projeto 2",
-        imagem: "./imagens/imagem2.jpg"
+        imagem: "./imagens/pedro.jpg"
     },
     { 
         titulo: "Projeto 3", 
         descricao: "Descrição do projeto 3",
-        imagem: "./imagens/imagem3.jpg"
+        imagem: "./imagens/vividdy.png"
     }
 ];
 
