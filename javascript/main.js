@@ -1,8 +1,13 @@
 // scripts/main.js
 import { carregarProjetos } from "./projetos.js";
-import { iniciarCarrossel } from "./carrossel.js"; // Importando a função do carrossel
+import SlideNav from "./slide.js";
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addArrow('.prev', '.next')
+slide.addControl('.custom-controls');
+
 
 document.addEventListener('DOMContentLoaded', () => {
   carregarProjetos();
-  iniciarCarrossel(); // Chamando a função para iniciar o carrossel
 });
