@@ -20,6 +20,7 @@ img {
   flex-shrink: 0;
   width: 80vw;
   max-width: 800px;
+  max-height: 800px;
   margin: 0 20px;
 
   border-radius: 4px;
@@ -68,8 +69,8 @@ img {
 .custom-controls li {
   opacity: .8;
   transform: scale(.8);
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   overflow: hidden;
   margin: 2px;
@@ -84,7 +85,8 @@ img {
 
 .arrow-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
   margin: 20px 0;
 }
 
@@ -95,7 +97,7 @@ img {
   color: white;
   width: 40px;
   height: 40px;
-  background: #FB5 url('../img/arrow.svg') center center no-repeat;
+  background: #FB5 url('../imagens/arrow.svg') center center no-repeat;
 }
 
 .arrow-nav button.prev {

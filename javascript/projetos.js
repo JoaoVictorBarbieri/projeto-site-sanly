@@ -1,33 +1,33 @@
 export function carregarProjetos() {
   const projetos = [
     { 
-      titulo: "Projeto 1", 
-      descricao: "Descrição do projeto 1",
+      titulo: "Pato Nintendista", 
+      descricao: "Profile picture",
       imagem: "./imagens/patos.jpg"
   },
   { 
-      titulo: "Projeto 2", 
-      descricao: "Descrição do projeto 2",
+      titulo: "Commission", 
+      descricao: "Commission number 1561",
       imagem: "./imagens/pedro.jpg"
   },
   { 
-      titulo: "Projeto 3", 
-      descricao: "Descrição do projeto 3",
+      titulo: "Emote Heart", 
+      descricao: "Emote",
       imagem: "./imagens/vividdy.png"
   },
-  { 
-      titulo: "Projeto 1", 
-      descricao: "Descrição do projeto 1",
+    { 
+      titulo: "Pato Nintendista", 
+      descricao: "Profile picture",
       imagem: "./imagens/patos.jpg"
   },
   { 
-      titulo: "Projeto 2", 
-      descricao: "Descrição do projeto 2",
+      titulo: "Commission", 
+      descricao: "Commission number 1561",
       imagem: "./imagens/pedro.jpg"
   },
   { 
-      titulo: "Projeto 3", 
-      descricao: "Descrição do projeto 3",
+      titulo: "Emote Heart", 
+      descricao: "Emote",
       imagem: "./imagens/vividdy.png"
   }
 ];

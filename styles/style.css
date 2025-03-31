@@ -77,7 +77,6 @@ section {
 
 /* Estilizando a sessão de entrada */
 .landing-page {
-  padding: 80px 20px;
   text-align: center;
   background-color: #F2EDD5;
   color: #333333;
@@ -95,7 +94,6 @@ section {
 
 .landing-page p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
 }
 
 /* Estilos para responsividade */
