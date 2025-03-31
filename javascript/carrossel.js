@@ -1,31 +1,50 @@
-// carrossel.js
-
 export function iniciarCarrossel() {
-    let indexImagem = 0;
-    const imagens = document.querySelectorAll('.carrossel-imagem');
+  const images = document.querySelectorAll('.carrossel-imagem');
+  let currentIndex = 0;
 
-    // Mostrar a primeira imagem
-    mostrarImagem(indexImagem);
+  function showImage(index) {
+    // Remove active class from all images
+    images.forEach((img) => {
+      img.style.opacity = '0';
+      img.style.transform = 'translateX(100%)';
+    });
 
-    // Função para mudar a imagem
-    function mudarImagem(n) {
-        indexImagem += n;
-        if (indexImagem >= imagens.length) {
-            indexImagem = 0;
-        } else if (indexImagem < 0) {
-            indexImagem = imagens.length - 1;
-        }
-        mostrarImagem(indexImagem);
-    }
+    // Add active class to current image
+    images[index].style.opacity = '1';
+    images[index].style.transform = 'translateX(0)';
+  }
 
-    // Função para mostrar a imagem ativa
-    function mostrarImagem(n) {
-        imagens.forEach((img, i) => {
-            img.style.display = (i === n) ? 'block' : 'none';
-        });
-    }
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
 
-    // Atribuindo os eventos de clique aos botões
-    document.querySelector('.prev').addEventListener('click', () => mudarImagem(-1));
-    document.querySelector('.next').addEventListener('click', () => mudarImagem(1));
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  // Adiciona eventos aos botões de navegação
+  const nextButton = document.querySelector('.next');
+  const prevButton = document.querySelector('.prev');
+
+  if (nextButton && prevButton) {
+    nextButton.addEventListener('click', nextImage);
+    prevButton.addEventListener('click', prevImage);
+  }
+
+  // Transição automática a cada 5 segundos
+  const autoSlide = setInterval(nextImage, 9000);
+
+  // Parar a transição automática quando o mouse estiver sobre o carrossel
+  const carrossel = document.querySelector('.carrossel');
+  if (carrossel) {
+    carrossel.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    carrossel.addEventListener('mouseleave', () =>
+      setInterval(nextImage, 9000),
+    );
+  }
+
+  // Inicializa o carrossel
+  showImage(currentIndex);
 }
