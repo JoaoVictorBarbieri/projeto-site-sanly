@@ -13,17 +13,40 @@ html {
 
 /* Estilização do corpo */
 body {
-  background-color: #f4f4f4;
+  background-color: #F2EDD5;
   color: #333;
   line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* Cabeçalho com imagem de fundo */
 header {
-  background: #E3B179;
+  background: url('../imagens/footerIMG.png') center 42%/cover no-repeat;
   color: white;
-  padding: 20px;
+  padding: 60px 20px;
   text-align: center;
+  position: relative;
+}
+
+/* Overlay para melhorar legibilidade */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+header h1, nav {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
 }
 
 nav ul {
@@ -33,13 +56,15 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 15px;
 }
 
 /* Seções */
@@ -47,15 +72,15 @@ section {
   padding: 40px;
   text-align: center;
 }
+
 /* Landing Page */
-/* Estilizando a sessão de entrada */
+
 /* Estilizando a sessão de entrada */
 .landing-page {
-  background-color: #f4f4f4;
   padding: 80px 20px;
   text-align: center;
-  background-image: linear-gradient(to bottom, #6a11cb, #EFC883, #F4F4F4); /* Fundo gradiente de cima para baixo */
-  color: white;
+  background-color: #F2EDD5;
+  color: #333333;
 }
 
 .landing-container {
@@ -131,6 +156,15 @@ section {
 
 /* Estilos para responsividade */
 @media (max-width: 768px) {
+  header h1 {
+      font-size: 2.5rem;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
   .landing-page h2 {
       font-size: 2rem;
   }
@@ -250,15 +284,6 @@ section {
   margin-bottom: 10px;
 }
 
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: white;
-  margin-top: 40px;
-}
-
 /* Redes Sociais */
 .redes-sociais {
   margin-top: 20px;
@@ -277,10 +302,10 @@ footer {
 
 /* Estilização do footer */
 footer {
-  background-color: #333;
+  background: linear-gradient(to bottom, #F2EDD5, #D9A50B);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   margin-top: 40px;
   font-size: 14px;
 }
