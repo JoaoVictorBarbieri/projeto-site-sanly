@@ -45,6 +45,40 @@ export function iniciarCarrossel() {
     );
   }
 
+  // Adiciona funcionalidade de modal para as imagens
+  const modal = document.querySelector('.modal');
+  const modalImg = document.querySelector('.modal-content');
+  const closeBtn = document.querySelector('.modal-close');
+
+  // Adiciona evento de clique para cada imagem do carrossel
+  images.forEach((img) => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'block';
+      modalImg.src = img.src;
+    });
+  });
+
+  // Fecha o modal quando clicar no botão X
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+  }
+
+  // Fecha o modal quando clicar fora da imagem
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  // Fecha o modal quando pressionar ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'block') {
+      modal.style.display = 'none';
+    }
+  });
+
   // Inicializa o carrossel
   showImage(currentIndex);
 }

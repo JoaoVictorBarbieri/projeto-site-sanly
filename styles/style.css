@@ -1,3 +1,8 @@
+/* Adicione isso no início do seu arquivo CSS */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -203,18 +208,46 @@ section {
 }
 /* Projetos */
 .projeto-lista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual */
+  gap: 30px; /* Espaçamento entre os projetos */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 20px;
 }
 
-.projeto-lista .projeto {
+.projeto {
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%; /* Ocupa todo o espaço da coluna */
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px); /* Efeito de hover suave */
+}
+
+/* Adicione responsividade para telas menores */
+@media (max-width: 992px) {
+  .projeto-lista {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
+@media (max-width: 576px) {
+  .projeto-lista {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+  }
+}
+
+.projeto-imagem {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 /* Rodapé */
@@ -226,20 +259,6 @@ footer {
   margin-top: 40px;
 }
 
-.projeto-imagem {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.projeto {
-  padding: 15px;
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
 /* Redes Sociais */
 .redes-sociais {
   margin-top: 20px;
@@ -264,4 +283,42 @@ footer {
   padding: 20px;
   margin-top: 40px;
   font-size: 14px;
+}
+
+/* Estilos para o modal de imagem */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  margin: auto;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  color: #ccc;
 }
