@@ -1,6 +1,7 @@
 // scripts/main.js
 import { carregarProjetos } from './projetos.js';
 import SlideNav from './slide.js';
+import { initModal } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Inicializa o AOS
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   slide.init();
   slide.addArrow('.prev', '.next');
   slide.addControl('.custom-controls');
+  initModal();
 });
