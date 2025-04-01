@@ -1,34 +1,34 @@
 export function carregarProjetos() {
   const projetos = [
     { 
-      titulo: "Pato Nintendista", 
-      descricao: "Profile picture",
-      imagem: "./imagens/patos.jpg"
+      titulo: "Torso", 
+      descricao: "",
+      imagem: "./imagens/project00.jpg"
   },
   { 
-      titulo: "Commission", 
-      descricao: "Commission number 1561",
-      imagem: "./imagens/pedro.jpg"
+      titulo: "Wallpaper", 
+      descricao: "",
+      imagem: "./imagens/project01.jpg"
   },
   { 
-      titulo: "Emote Heart", 
-      descricao: "Emote",
-      imagem: "./imagens/vividdy.png"
+      titulo: "Icon", 
+      descricao: "",
+      imagem: "./imagens/project02.jpg"
   },
     { 
-      titulo: "Hallowen Commission", 
-      descricao: "Thumbnail",
-      imagem: "./imagens/projetoEx04.jpg"
+      titulo: "Emotes", 
+      descricao: "",
+      imagem: "./imagens/project03.jpg"
   },
   { 
-      titulo: "Trio", 
-      descricao: "Friendship",
-      imagem: "./imagens/projetoEx05.jpg"
+      titulo: "Full Body", 
+      descricao: "",
+      imagem: "./imagens/project04.jpg"
   },
   { 
-      titulo: "Grand Festival Commission", 
-      descricao: "2 Persons Commission",
-      imagem: "./imagens/projetoEx06.jpg"
+      titulo: "Sheet Reference", 
+      descricao: "",
+      imagem: "./imagens/project05.jpg"
   }
 ];
 

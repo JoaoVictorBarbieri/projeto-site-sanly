@@ -20,7 +20,7 @@ body {
 
 /* Cabeçalho com imagem de fundo */
 header {
-  background: url('../imagens/footerIMG.png') center 42%/cover no-repeat;
+  background: url('../imagens/headerBackground.jpg') center 42%/cover no-repeat;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -103,6 +103,13 @@ section {
   text-align: center;
   color: #333333;
 }
+.landing-page h2,
+#sobre h2,
+#projetos h2,
+#precos h2,
+#contato h2 {
+  color: #7eb1ea;
+}
 
 .landing-container {
   max-width: 900px;
@@ -164,7 +171,6 @@ section {
 }
 
 #sobre h2 {
-  color: #333;
   font-size: 2rem;
   margin-bottom: 25px;
   text-align: center;
@@ -257,16 +263,6 @@ section {
   color: #D8A40B;
 }
 
-/* Estilização do footer */
-footer {
-  background: linear-gradient(to bottom, #F2EDD5, #D9A50B,  #D9A50B);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
 /* Estilos para o modal de imagem */
 .modal {
   display: none;
@@ -312,7 +308,6 @@ footer {
 }
 
 #precos h2, #projetos h2 {
-  color: #333;
   font-size: 2.5rem;
   margin-bottom: 40px;
   text-align: center;
@@ -356,4 +351,14 @@ footer {
 
 #contato h2 {
   margin-bottom: 33px;
+}
+
+/* Estilização do footer */
+footer {
+  background: linear-gradient(to bottom, #F2EDD5, #F2BED8,  #FCA6BF);
+  color: white;
+  text-align: center;
+  padding: 60px 20px 20px 20px;
+  margin-top: 40px;
+  font-size: 14px;
 }
