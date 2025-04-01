@@ -8,6 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="styles/slide.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -26,14 +27,15 @@
   </header>
 
   <!-- Sessão de Entrada (Landing Page) -->
-  <section id="entrada" class="landing-page">
+  <section id="entrada" class="landing-page" data-aos="fade-up">
     <div class="landing-container">
       <h2>Welcome to my portfolio!</h2>
       <h3> Explore my colorful universe! 🎨✨</h3>
       <p>Welcome! Here you will find vibrant illustrations full of personality. Feel free to explore my work and if something sparks your interest, contact me to commission a unique artwork. Let's bring your ideas to life together! 🚀💖</p>
-
+    </div>
   </section>
-  <section class="slide-section">
+
+  <section class="slide-section" data-aos="fade-up">
     <div class="slide-container">
       <ul class="custom-controls">
         <li><img src="imagens/slide00.jpg" alt=""></li>
@@ -58,30 +60,27 @@
     </div>
   </section>
 
-
-
-  <section id="sobre">
+  <section id="sobre" data-aos="fade-up">
     <h2>About me</h2>
     <p>Illustration has always been a part of my life since I was a child. I love vibrant colors and striking styles, and this passion is reflected in everything I create. I love exploring bold combinations and bringing characters and worlds full of energy to life.</p>
-    <p>My biggest inspiration comes from Splatoon, a game that perfectly conveys the mix of creativity and dynamism that fascinates me so much. Drawing is more than a hobby for me, it’s a form of expression, a universe where I can transform ideas into art and give color to my imagination. 🎨✨</p>
+    <p>My biggest inspiration comes from Splatoon, a game that perfectly conveys the mix of creativity and dynamism that fascinates me so much. Drawing is more than a hobby for me, it's a form of expression, a universe where I can transform ideas into art and give color to my imagination. 🎨✨</p>
   </section>
 
-  <section id="projetos">
+  <section id="projetos" data-aos="fade-up">
     <h2>Sum Arts</h2>
     <div class="projeto-lista">
       <!-- Projetos serão adicionados dinamicamente -->
     </div>
   </section>
 
-  <section id="precos">
+  <section id="precos" data-aos="fade-up">
     <h2>And What About Prices?</h2>
     <div class="precos-container">
       <img src="imagens/prices.jpeg" alt="Tabela de Preços" class="precos-imagem">
     </div>
-
   </section>
 
-  <section id="contato">
+  <section id="contato" data-aos="fade-up">
     <h2>Already have something in mind? Contact me!</h2>
     <div class="redes-sociais">
       <a href="https://discord.gg/Ym5rrgVeAa" target="_blank" aria-label="Discord">
@@ -97,14 +96,15 @@
       <a href="https://www.instagram.com/sanlypolyy/ " target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
         <span>Instagram</span>
+      </a>
     </div>
-    </a>
   </section>
 
   <footer>
     <p>&copy; 2025 Sanly. All rights reserved.</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="module" src="./javascript/main.js"></script>
 </body>
 
