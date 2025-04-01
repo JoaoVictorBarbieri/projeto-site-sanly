@@ -69,7 +69,7 @@ nav ul li a {
 
 /* Seções */
 section {
-  padding: 40px;
+  padding: 44px;
   text-align: center;
 }
 
@@ -228,23 +228,23 @@ section {
 
 /* Redes Sociais */
 .redes-sociais {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .redes-sociais a {
-  font-size: 30px;
+  font-size: 33px;
   color: #E0AA7A;
-  margin: 0 15px;
+  margin: 0 16.5px;
   text-decoration: none;
 }
 
 .redes-sociais a:hover {
-  color: #9A2757;
+  color: #D8A40B;
 }
 
 /* Estilização do footer */
 footer {
-  background: linear-gradient(to bottom, #F2EDD5, #D9A50B);
+  background: linear-gradient(to bottom, #F2EDD5, #D9A50B,  #D9A50B);
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -288,4 +288,57 @@ footer {
 
 .modal-close:hover {
   color: #ccc;
+}
+
+/* Preços */
+#precos {
+  padding: 60px 20px;
+  background-color: #F2EDD5;
+}
+
+#precos h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.precos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.precos-container:hover {
+  transform: translateY(-5px);
+}
+
+.precos-imagem {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #precos h2 {
+    font-size: 2rem;
+  }
+  
+  .precos-container {
+    padding: 15px;
+    margin: 0 15px;
+  }
+}
+
+/* Contact section specific styles */
+#contato {
+  padding: 66px 44px;
+}
+
+#contato h2 {
+  margin-bottom: 33px;
 }

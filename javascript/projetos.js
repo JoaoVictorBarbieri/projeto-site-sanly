@@ -18,17 +18,17 @@ export function carregarProjetos() {
     { 
       titulo: "Pato Nintendista", 
       descricao: "Profile picture",
-      imagem: "./imagens/patos.jpg"
+      imagem: "./imagens/projetoEx04.jpg"
   },
   { 
       titulo: "Commission", 
       descricao: "Commission number 1561",
-      imagem: "./imagens/pedro.jpg"
+      imagem: "./imagens/projetoEx05.jpg"
   },
   { 
       titulo: "Emote Heart", 
       descricao: "Emote",
-      imagem: "./imagens/vividdy.png"
+      imagem: "./imagens/projetoEx06.jpg"
   }
 ];
 

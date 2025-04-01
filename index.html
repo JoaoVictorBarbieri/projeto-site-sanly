@@ -33,9 +33,18 @@
 
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nesciunt iusto velit, laudantium tempora sit? Voluptas libero cupiditate ipsum deleniti,corrupti, quisquam omnis nulla inventore obcaecati, sapiente quia. Corrupti quis laboriosam voluptates?</p>
 
-    </section>
-    <section>
-      <ul class="custom-controls">
+  </section>
+  <section>
+    <ul class="custom-controls">
+      <li><img src="imagens/annah.jpg" alt=""></li>
+      <li><img src="imagens/choco.jpg" alt=""></li>
+      <li><img src="imagens/emotes.jpg" alt=""></li>
+      <li><img src="imagens/annah.jpg" alt=""></li>
+      <li><img src="imagens/choco.jpg" alt=""></li>
+      <li><img src="imagens/emotes.jpg" alt=""></li>
+    </ul>
+    <div class="slide-wrapper">
+      <ul class="slide">
         <li><img src="imagens/annah.jpg" alt=""></li>
         <li><img src="imagens/choco.jpg" alt=""></li>
         <li><img src="imagens/emotes.jpg" alt=""></li>
@@ -43,21 +52,12 @@
         <li><img src="imagens/choco.jpg" alt=""></li>
         <li><img src="imagens/emotes.jpg" alt=""></li>
       </ul>
-      <div class="slide-wrapper">
-        <ul class="slide">
-          <li><img src="imagens/annah.jpg" alt=""></li>
-          <li><img src="imagens/choco.jpg" alt=""></li>
-          <li><img src="imagens/emotes.jpg" alt=""></li>
-          <li><img src="imagens/annah.jpg" alt=""></li>
-          <li><img src="imagens/choco.jpg" alt=""></li>
-          <li><img src="imagens/emotes.jpg" alt=""></li>
-        </ul>
-        <div class="arrow-nav">
-          <button class="prev"></button>
-          <button class="next"></button>
-        </div>
+      <div class="arrow-nav">
+        <button class="prev"></button>
+        <button class="next"></button>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
@@ -71,6 +71,13 @@
     <h2>Arts</h2>
     <div class="projeto-lista">
       <!-- Projetos serão adicionados dinamicamente -->
+    </div>
+  </section>
+
+  <section id="precos">
+    <h2>Prices</h2>
+    <div class="precos-container">
+      <img src="imagens/prices.jpeg" alt="Tabela de Preços" class="precos-imagem">
     </div>
   </section>
 
@@ -96,12 +103,6 @@
   </footer>
 
   <script type="module" src="./javascript/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const slide = new Slide('.slide', '.slide-items');
-      slide.init();
-    });
-  </script>
 </body>
 
 </html>
