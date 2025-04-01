@@ -16,18 +16,18 @@ export function carregarProjetos() {
       imagem: "./imagens/vividdy.png"
   },
     { 
-      titulo: "Pato Nintendista", 
-      descricao: "Profile picture",
+      titulo: "Hallowen Commission", 
+      descricao: "Thumbnail",
       imagem: "./imagens/projetoEx04.jpg"
   },
   { 
-      titulo: "Commission", 
-      descricao: "Commission number 1561",
+      titulo: "Trio", 
+      descricao: "Friendship",
       imagem: "./imagens/projetoEx05.jpg"
   },
   { 
-      titulo: "Emote Heart", 
-      descricao: "Emote",
+      titulo: "Grand Festival Commission", 
+      descricao: "2 Persons Commission",
       imagem: "./imagens/projetoEx06.jpg"
   }
 ];
