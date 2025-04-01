@@ -36,6 +36,31 @@ img {
   transform: scale(1);
 }
 
+@media (max-width: 992px) {
+  .slide li {
+    max-width: 490px; /* 70% de 700px */
+    max-height: 490px; /* 70% de 700px */
+    width: 85vw; /* Aumenta um pouco a largura para compensar a altura menor */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide li {
+    max-height: 350px; /* Metade da altura original */
+    width: 90vw; /* Aumenta um pouco a largura para compensar a altura menor */
+  }
+  
+  .custom-controls li {
+    width: 50px; /* Reduz o tamanho dos controles */
+    height: 50px;
+  }
+  
+  .arrow-nav button {
+    width: 35px; /* Reduz o tamanho dos botões de navegação */
+    height: 35px;
+  }
+}
+
 [data-control="slide"] {
   display: flex;
   justify-content: center;
