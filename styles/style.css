@@ -47,6 +47,24 @@ header h1, nav {
 header h1 {
   font-size: 3.2rem;
   margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+header h1:hover {
+  text-shadow: 0 0 10px #D9A50B,
+               0 0 20px #D9A50B,
+               0 0 30px #D9A50B;
+}
+
+header h1 i {
+  transition: all 0.3s ease;
+}
+
+header h1:hover i {
+  color: #D9A50B;
+  text-shadow: 0 0 10px #D9A50B,
+               0 0 20px #D9A50B,
+               0 0 30px #D9A50B;
 }
 
 nav ul {
@@ -65,6 +83,11 @@ nav ul li a {
   font-weight: bold;
   font-size: 1.2rem;
   padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ABCEF6;
 }
 
 /* Seções */
@@ -78,7 +101,6 @@ section {
 /* Estilizando a sessão de entrada */
 .landing-page {
   text-align: center;
-  background-color: #F2EDD5;
   color: #333333;
 }
 
@@ -149,15 +171,6 @@ section {
   position: relative;
 }
 
-#sobre h2::after {
-  content: '';
-  display: block;
-  width: 200px;
-  height: 3px;
-  background-color: #4a90e2; /* cor da linha decorativa */
-  margin: 15px auto 0;
-}
-
 #sobre p {
   color: #555;
   line-height: 1.8;
@@ -165,6 +178,7 @@ section {
   font-size: 1.1rem;
   text-align: justify;
   font-family: 'Roboto', sans-serif;
+  text-indent: 2em; /* Adiciona indentação de 2em (aproximadamente 32px) */
 }
 
 /* Responsividade para telas menores */
@@ -200,6 +214,7 @@ section {
   width: 100%; /* Ocupa todo o espaço da coluna */
   transition: transform 0.3s ease;
 }
+
 
 .projeto:hover {
   transform: translateY(-5px); /* Efeito de hover suave */
@@ -296,7 +311,7 @@ footer {
   background-color: #F2EDD5;
 }
 
-#precos h2 {
+#precos h2, #projetos h2 {
   color: #333;
   font-size: 2.5rem;
   margin-bottom: 40px;

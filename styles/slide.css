@@ -25,7 +25,7 @@ img {
 
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,.4);
+  box-shadow: 0 2px 6px rgba(0,0,0,.6);
   opacity: 1.8;
   transform: scale(.8);
   transition: .4s;
@@ -102,4 +102,56 @@ img {
 
 .arrow-nav button.prev {
   transform: rotate(-180deg);
+}
+
+/* Slide Section Styles */
+.slide-section {
+  position: relative;
+  padding: 60px 0;
+  margin: 0;
+  overflow: hidden;
+  background: url('../imagens/backgroundGIF.gif') center/cover no-repeat fixed;
+}
+
+.slide-section::before,
+.slide-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slide-section::before {
+  top: 0;
+  background: linear-gradient(to bottom, #F2EDD5 0%, rgba(0, 0, 0, 0.001) 100%);
+}
+
+.slide-section::after {
+  bottom: 0;
+  background: linear-gradient(to top, #F2EDD5 0%, rgba(0, 0, 0, 0.001) 100%);
+}
+
+.slide-container {
+  position: relative;
+  z-index: 2;
+  max-width: 100vw ;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slide-section .custom-controls {
+  margin-top: 0;
+}
+
+.slide-section .arrow-nav button {
+  background: rgba(92, 85, 254, 0.6) url('../imagens/arrow.svg') center center no-repeat;
+}
+
+.slide-section .slide li {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
