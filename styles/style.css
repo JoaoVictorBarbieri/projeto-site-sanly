@@ -20,7 +20,7 @@ body {
 
 /* Cabeçalho com imagem de fundo */
 header {
-  background: url('../imagens/headerBackground.jpg') center 42%/cover no-repeat;
+  background: url('../imagens/backgroundHeader.webp') center 42%/cover no-repeat;
   color: white;
   padding: 60px 20px;
   text-align: center;

@@ -46,7 +46,7 @@ img {
 
 @media (max-width: 768px) {
   .slide li {
-    max-height: 350px; /* Metade da altura original */
+    max-height: 335px; /* Metade da altura original */
     width: 90vw; /* Aumenta um pouco a largura para compensar a altura menor */
   }
   

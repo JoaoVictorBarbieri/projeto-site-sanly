@@ -5,32 +5,32 @@ export function carregarProjetos() {
     {
       titulo: 'Torso',
       descricao: '',
-      imagem: './imagens/project00.jpg',
+      imagem: './imagens/project00.webp',
     },
     {
       titulo: 'Wallpaper',
       descricao: '',
-      imagem: './imagens/project01.jpg',
+      imagem: './imagens/project01.webp',
     },
     {
       titulo: 'Icon',
       descricao: '',
-      imagem: './imagens/project02.jpg',
+      imagem: './imagens/project02.webp',
     },
     {
       titulo: 'Emotes',
       descricao: '',
-      imagem: './imagens/project03.jpg',
+      imagem: './imagens/project03.webp',
     },
     {
       titulo: 'Full Body',
       descricao: '',
-      imagem: './imagens/project04.jpg',
+      imagem: './imagens/project04.webp',
     },
     {
       titulo: 'Sheet Reference',
       descricao: '',
-      imagem: './imagens/project05.jpg',
+      imagem: './imagens/project05.webp',
     },
   ];
 
