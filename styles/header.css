@@ -1,0 +1,84 @@
+/* Cabeçalho com imagem de fundo */
+header {
+  background: url('../imagens/backgroundHeader.webp') center 42%/cover no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Overlay para melhorar legibilidade */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+header h1, nav {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+header h1:hover {
+  text-shadow: 0 0 10px #D9A50B,
+               0 0 20px #D9A50B,
+               0 0 30px #D9A50B;
+}
+
+header h1 i {
+  transition: all 0.3s ease;
+}
+
+header h1:hover i {
+  color: #D9A50B;
+  text-shadow: 0 0 10px #D9A50B,
+               0 0 20px #D9A50B,
+               0 0 30px #D9A50B;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ABCEF6;
+}
+
+/* Responsividade do header */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2.5rem;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+} 

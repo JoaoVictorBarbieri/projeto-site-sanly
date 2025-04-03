@@ -1,0 +1,42 @@
+/* Sobre */
+#sobre {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+}
+
+#sobre p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  text-indent: 2em;
+}
+
+/* Responsividade da seção sobre */
+@media (max-width: 768px) {
+  #sobre {
+      margin: 30px 15px;
+      padding: 20px;
+  }
+
+  #sobre h2 {
+      font-size: 1.8rem;
+  }
+
+  #sobre p {
+      font-size: 1rem;
+  }
+} 

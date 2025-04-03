@@ -1,0 +1,22 @@
+/* Reset básico e configurações globais */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Winky Sans', sans-serif;
+}
+
+body {
+  background-color: #F2EDD5;
+  color: #333;
+  line-height: 1.6;
+}
+
+section {
+  padding: 44px;
+  text-align: center;
+} 

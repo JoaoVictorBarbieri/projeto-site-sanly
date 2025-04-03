@@ -1,3 +1,14 @@
+/* Importação dos módulos CSS */
+@import 'reset.css';
+@import 'header.css';
+@import 'landing.css';
+@import 'sobre.css';
+@import 'projetos.css';
+@import 'precos.css';
+@import 'contato.css';
+@import 'footer.css';
+@import 'slide.css';
+
 /* Adicione isso no início do seu arquivo CSS */
 html {
   scroll-behavior: smooth;
