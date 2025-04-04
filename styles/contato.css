@@ -11,12 +11,15 @@
 /* Redes Sociais */
 .redes-sociais {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
   margin-top: 22px;
 }
 
 .redes-sociais a {
+  display: block;
+  justify-content: center;
   font-size: 33px;
   color: #E0AA7A;
   margin: 0 16.5px;
