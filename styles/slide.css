@@ -12,6 +12,7 @@ img {
 }
 .slide {
   display: flex;
+  cursor: grab;
 }
 .slide:hover {
   will-change: transform;

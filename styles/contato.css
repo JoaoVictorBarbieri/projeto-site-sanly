@@ -16,7 +16,6 @@
   gap: 20px;
   margin-top: 22px;
 }
-
 .redes-sociais a {
   display: block;
   justify-content: center;
@@ -24,8 +23,10 @@
   color: #E0AA7A;
   margin: 0 16.5px;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .redes-sociais a:hover {
   color: #D8A40B;
 } 
+
