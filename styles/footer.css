@@ -1,8 +1,8 @@
-/* Footer */
 footer {
-  background-color: #333;
+  background: linear-gradient(to bottom, #F2EDD5, #F2BED8,  #FCA6BF);
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-} 
+  padding: 60px 20px 20px 20px;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
