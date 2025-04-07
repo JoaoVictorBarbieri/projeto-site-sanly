@@ -28,7 +28,7 @@ export function carregarProjetos() {
       imagem: './imagens/project04.webp',
     },
     {
-      titulo: 'Sheet Reference',
+      titulo: 'Reference Sheet',
       descricao: '',
       imagem: './imagens/project05.webp',
     },
